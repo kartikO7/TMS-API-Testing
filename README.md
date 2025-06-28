@@ -73,7 +73,7 @@ TMS-API-Testing/
 ## 👨‍💻 Author
 
 **Kartik Bhatt**  
-🔗 [LinkedIn](https://www.linkedin.com/in/yourlinkedinURL)  
+🔗 [LinkedIn](https://www.linkedin.com/in/kartik-bhatt-68b534226/)  
 📧 bhattkartik553@gmail.com
 
 ---
