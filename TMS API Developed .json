@@ -1,0 +1,352 @@
+{
+	"info": {
+		"_postman_id": "c3ff5469-1807-4079-905d-8f98bcd50879",
+		"name": "TMS API Developed By Rohit Pal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28673883"
+	},
+	"item": [
+		{
+			"name": "Registration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullname\": \"ankit\",\r\n    \"username\": \"ankit123\",\r\n    \"password\": \"bunty\",\r\n    \"email\": \"bunty@gmail.com\",\r\n    \"mobile\": \"9878767876\"\r\n}"
+				},
+				"url": {
+					"raw": "https://tmsapi.codepanda.in/registration.php",
+					"protocol": "https",
+					"host": [
+						"tmsapi",
+						"codepanda",
+						"in"
+					],
+					"path": [
+						"registration.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"ankit123\",\r\n    \"password\": \"bunty\"\r\n}"
+				},
+				"url": {
+					"raw": "https://tmsapi.codepanda.in/login.php",
+					"protocol": "https",
+					"host": [
+						"tmsapi",
+						"codepanda",
+						"in"
+					],
+					"path": [
+						"login.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Your Account Via Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"4a9de8ace048c13dd2071f8d010c9963\"\r\n}"
+				},
+				"url": {
+					"raw": "https://tmsapi.codepanda.in/fetch-user.php",
+					"protocol": "https",
+					"host": [
+						"tmsapi",
+						"codepanda",
+						"in"
+					],
+					"path": [
+						"fetch-user.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Your Profile",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"ankit123\",\r\n    \"password\": \"bunty\",\r\n    \"token\": \"4a9de8ace048c13dd2071f8d010c9963\",\r\n    \"fullname\": \"ANKITqwerty\",\r\n    \"email\": \"bunty123@gmail.com\",\r\n    \"mobile\": \"9876675645\"\r\n}"
+				},
+				"url": {
+					"raw": "https://tmsapi.codepanda.in/update.php",
+					"protocol": "https",
+					"host": [
+						"tmsapi",
+						"codepanda",
+						"in"
+					],
+					"path": [
+						"update.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Your Tour",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullname\": \"ANKITqwerty\",\r\n    \"email\": \"bunty123@gmail.com\",\r\n    \"mobile\": \"9876543210\",\r\n    \"packagename\": \"goa\",\r\n    \"fromdate\": \"29/07/2023\",\r\n    \"todate\": \"05/08/2023\",\r\n    \"pickuplocation\": \"delhi\",\r\n    \"person\": \"3\"\r\n}"
+				},
+				"url": {
+					"raw": "https://tmsapi.codepanda.in/booktour.php",
+					"protocol": "https",
+					"host": [
+						"tmsapi",
+						"codepanda",
+						"in"
+					],
+					"path": [
+						"booktour.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Your Booking Via Email Id",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"bunty123@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "https://tmsapi.codepanda.in/checkbookings.php",
+					"protocol": "https",
+					"host": [
+						"tmsapi",
+						"codepanda",
+						"in"
+					],
+					"path": [
+						"checkbookings.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Your Account",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"iambittupal\",\r\n    \"token\": \"773221ed60a52296f94841a113da1873\"\r\n}"
+				},
+				"url": {
+					"raw": "https://tmsapi.codepanda.in/delete.php",
+					"protocol": "https",
+					"host": [
+						"tmsapi",
+						"codepanda",
+						"in"
+					],
+					"path": [
+						"delete.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Your Booking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"demo@gmail.com\",\r\n    \"token\": \"6a24f84a7883e67b\"\r\n}"
+				},
+				"url": {
+					"raw": "https://tmsapi.codepanda.in/deletebooking.php",
+					"protocol": "https",
+					"host": [
+						"tmsapi",
+						"codepanda",
+						"in"
+					],
+					"path": [
+						"deletebooking.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin View All Members",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tmsapi.codepanda.in/admin/getallusers.php",
+					"protocol": "https",
+					"host": [
+						"tmsapi",
+						"codepanda",
+						"in"
+					],
+					"path": [
+						"admin",
+						"getallusers.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Can View All Bookings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tmsapi.codepanda.in/admin/getallbookings.php",
+					"protocol": "https",
+					"host": [
+						"tmsapi",
+						"codepanda",
+						"in"
+					],
+					"path": [
+						"admin",
+						"getallbookings.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Update Booking Details",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"demo@gmail.com\",\r\n    \"token\": \"6a24f84a7883e67b\",\r\n    \"packagestatus\": \"Confirm\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost/tms-api/admin/updatestatus.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tms-api",
+						"admin",
+						"updatestatus.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Can Check Pending & Confirm Booking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"packagestatus\": \"Confirm\"\r\n}"
+				},
+				"url": {
+					"raw": "https://tmsapi.codepanda.in/admin/bookingstatus.php",
+					"protocol": "https",
+					"host": [
+						"tmsapi",
+						"codepanda",
+						"in"
+					],
+					"path": [
+						"admin",
+						"bookingstatus.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
