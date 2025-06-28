@@ -18,7 +18,6 @@ This repo documents the testing of its RESTful APIs using Postman collection.
 ```
 TMS-API-Testing/
 ├── TMS_API_Collection.postman_collection.json
-├── screenshots/              # (optional) Add screenshots of responses
 └── README.md
 ```
 
